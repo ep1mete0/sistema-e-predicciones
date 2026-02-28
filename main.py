@@ -28,12 +28,12 @@ from sklearn.metrics import accuracy_score, classification_report
 # CONFIGURACIÓN
 # ─────────────────────────────────────────────────────────────────
 CSV_FILES = [
-    './premier/2021.csv',
-    './premier/2022.csv',
-    './premier/2023.csv',
-    './premier/2024.csv',
-    './premier/2025.csv',
-    './premier/2026.csv'
+    'premier/2021.csv',
+    'premier/2022.csv',
+    'premier/2023.csv',
+    'premier/2024.csv',
+    'premier/2025.csv',
+    'premier/2026.csv'
 ]
 
 MODEL_FILE  = 'modelo_laliga.pkl'
