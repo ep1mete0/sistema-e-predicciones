@@ -1,0 +1,11 @@
+bash# 1. Entrenar el modelo
+python predictor_laliga.py --train
+
+# 2. Predecir con cuotas (más preciso)
+python predictor_laliga.py --predict "Real Madrid" "FC Barcelona" --odds 1.80 3.50 4.20
+
+# 3. Predecir sin cuotas (usa solo la forma)
+python predictor_laliga.py --predict "Real Madrid" "Atletico de Madrid"
+
+# 4. Modo interactivo
+python predictor_laliga.py
