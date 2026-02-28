@@ -71,43 +71,43 @@ pip install -r requirements.txt
 
 ### Entrenar el modelo
 ```bash
-python predictor_laliga.py --train
+python main.py --train
 ```
 
 ### Predecir un partido (con cuotas — más preciso)
 ```bash
-python predictor_laliga.py --predict "Real Madrid" "FC Barcelona" --odds 1.80 3.50 4.20
+python main.py --predict "Real Madrid" "FC Barcelona" --odds 1.80 3.50 4.20
 ```
 
 ### Predecir un partido (sin cuotas — usa solo la forma reciente)
 ```bash
-python predictor_laliga.py --predict "Real Madrid" "Atletico de Madrid"
+python main.py --predict "Real Madrid" "Atletico de Madrid"
 ```
 
 ### Registrar el resultado real después de un partido
 ```bash
-python predictor_laliga.py --resultado "Real Madrid" "FC Barcelona" H
+python main.py --resultado "Real Madrid" "FC Barcelona" H
 ```
 Valores posibles: `H` (gana local) · `D` (empate) · `A` (gana visitante)
 
 ### Registrar resultado incluyendo los goles
 ```bash
-python predictor_laliga.py --resultado "Real Madrid" "FC Barcelona" H --goles 2 1
+python main.py --resultado "Real Madrid" "FC Barcelona" H --goles 2 1
 ```
 
 ### Ver el historial de partidos registrados
 ```bash
-python predictor_laliga.py --historial
+python main.py --historial
 ```
 
 ### Ver estadísticas del historial
 ```bash
-python predictor_laliga.py --stats
+python main.py --stats
 ```
 
 ### Modo interactivo (menú completo)
 ```bash
-python predictor_laliga.py
+python main.py
 ```
 
 ---
@@ -133,7 +133,7 @@ CSV_FILES = [
 ```
 
 ```bash
-python predictor_laliga.py --train
+python main.py --train
 ```
 
 ---
